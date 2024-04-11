@@ -3,6 +3,7 @@
 #import <React/RCTBundleURLProvider.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application 
@@ -26,7 +27,7 @@
   self.initialProps = @{};
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
-    // You can skip this line if you have the latest version of the SDK installed
+      // You can skip this line if you have the latest version of the SDK installed
     [[FBSDKApplicationDelegate sharedInstance] application:application
       didFinishLaunchingWithOptions:launchOptions];
     // Add any custom logic here.
@@ -35,12 +36,16 @@
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
+  return [self getBundleURL];
+}
+
+- (NSURL *)getBundleURL
+{
 #if DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];
 #else
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
 }
-
 
 @end

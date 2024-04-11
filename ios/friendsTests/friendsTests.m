@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface beloni_appTests : XCTestCase
+@interface friendsTests : XCTestCase
 
 @end
 
-@implementation beloni_appTests
+@implementation friendsTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {
