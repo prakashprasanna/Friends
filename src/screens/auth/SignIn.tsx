@@ -63,7 +63,7 @@ const SignIn: React.FC = (): JSX.Element => {
 
   GoogleSignin.configure({
     webClientId:
-      '390674049538-03p3cj2j9escu79pjf45e0pjndiek38e.apps.googleusercontent.com',
+      '487165026561-bpd96f0d9c9m0b76acdh65pr0ltuvnnc.apps.googleusercontent.com',
     offlineAccess: true,
     hostedDomain: '',
     forceConsentPrompt: true,
@@ -297,7 +297,7 @@ const SignIn: React.FC = (): JSX.Element => {
               iconName='glass'
             />
           </View>
-          <VoiceNote />
+          {/* <VoiceNote /> */}
         </LinearGradient>
       </View>
     );
