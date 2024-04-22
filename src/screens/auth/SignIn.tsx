@@ -17,7 +17,7 @@ import {
   GoogleSignin,
   GoogleSigninButton,
   statusCodes,
-} from 'react-native-google-signin';
+} from '@react-native-community/google-signin';
 import LinearGradient from 'react-native-linear-gradient';
 import VoiceNote from '../../components/voice/voice';
 import {
@@ -63,10 +63,9 @@ const SignIn: React.FC = (): JSX.Element => {
 
   GoogleSignin.configure({
     webClientId:
-      '487165026561-bpd96f0d9c9m0b76acdh65pr0ltuvnnc.apps.googleusercontent.com',
+      '79308151639-dn7d4kcrpm2f740obt2nafenc2h0lppi.apps.googleusercontent.com',
     offlineAccess: true,
     hostedDomain: '',
-    forceConsentPrompt: true,
   });
 
   const renderStatusBar = () => {
@@ -384,7 +383,7 @@ const SignIn: React.FC = (): JSX.Element => {
               padding: 10,
             }}
           >
-            <GoogleSigninButton
+            {/* <GoogleSigninButton
               style={{
                 width: 180,
                 height: 60,
@@ -397,7 +396,7 @@ const SignIn: React.FC = (): JSX.Element => {
                 signInViaGoogle();
               }}
               disabled={signinInProgress}
-            />
+            /> */}
             <View style={{backgroundColor: '#ffffff', width: 3}} />
             <View>
               <LoginButton
