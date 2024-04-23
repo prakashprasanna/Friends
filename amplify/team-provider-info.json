@@ -10,6 +10,11 @@
       "StackName": "amplify-friends-dev-223555",
       "StackId": "arn:aws:cloudformation:ap-southeast-2:905418270853:stack/amplify-friends-dev-223555/eaede710-ee78-11ee-967b-0a87241f8919",
       "AmplifyAppId": "d3ahlnrm53qqow"
+    },
+    "categories": {
+      "auth": {
+        "friendsaaaa13d2": {}
+      }
     }
   }
 }
