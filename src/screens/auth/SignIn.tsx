@@ -61,12 +61,12 @@ const SignIn: React.FC = (): JSX.Element => {
     new GraphRequestManager().addRequest(profileRequest).start();
   };
 
-  GoogleSignin.configure({
-    webClientId:
-      '79308151639-dn7d4kcrpm2f740obt2nafenc2h0lppi.apps.googleusercontent.com',
-    offlineAccess: true,
-    hostedDomain: '',
-  });
+  // GoogleSignin.configure({
+  //   webClientId:
+  //     '79308151639-dn7d4kcrpm2f740obt2nafenc2h0lppi.apps.googleusercontent.com',
+  //   offlineAccess: true,
+  //   hostedDomain: '',
+  // });
 
   const renderStatusBar = () => {
     return (
@@ -425,6 +425,7 @@ const SignIn: React.FC = (): JSX.Element => {
             containerStyle={{
               marginBottom: 10,
             }}
+            testID='email'
           />
           <components.InputField
             placeholder='••••••••'
@@ -435,6 +436,7 @@ const SignIn: React.FC = (): JSX.Element => {
               marginBottom: 20,
             }}
             secureTextEntry={true}
+            testID='password'
           />
           <View
             style={{
@@ -490,6 +492,7 @@ const SignIn: React.FC = (): JSX.Element => {
           </View>
           <components.Button
             title='Sign in'
+            testID='sign_in'
             onPress={() => {
               if (validation({email, password})) {
                 dispatch(setRefreshToken('refreshToken'));

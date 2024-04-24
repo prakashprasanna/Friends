@@ -17,6 +17,7 @@ type Props = {
   eyeOffIcon?: boolean;
   checkIcon?: boolean;
   icon?: JSX.Element;
+  testID?: string;
 };
 
 const InputField: React.FC<Props> = ({
@@ -30,6 +31,7 @@ const InputField: React.FC<Props> = ({
   label,
   value,
   icon,
+  testID,
 }): JSX.Element | null => {
   return (
     <View
@@ -65,6 +67,7 @@ const InputField: React.FC<Props> = ({
         secureTextEntry={secureTextEntry}
         onChangeText={onChangeText}
         value={value}
+        testID={testID ? testID : undefined}
       />
       {checkIcon && (
         <View style={{paddingHorizontal: 20}}>

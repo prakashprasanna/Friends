@@ -15,6 +15,7 @@ type Props = PropsWithChildren<{
   iconFamily?: string;
   iconName?: string;
   iconColor?: string;
+  testID?: string;
 }>;
 
 const Button: React.FC<Props> = ({
@@ -28,6 +29,7 @@ const Button: React.FC<Props> = ({
   iconColor,
   iconFamily,
   iconName,
+  testID,
 }) => {
   return (
     <View style={containerStyle}>
@@ -42,6 +44,7 @@ const Button: React.FC<Props> = ({
           ...buttonStyle,
         }}
         onPress={onPress}
+        testID={testID ? testID : undefined}
       >
         {icon && (
           <>

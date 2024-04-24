@@ -131,6 +131,7 @@ const Onboarding: React.FC = (): JSX.Element => {
       >
         <components.Button
           title='Get Started'
+          testID='get'
           onPress={() => {
             dispatch(setIsFirstTime(false));
           }}
