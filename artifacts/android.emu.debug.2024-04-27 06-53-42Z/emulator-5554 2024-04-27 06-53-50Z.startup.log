@@ -1,0 +1,46 @@
+--------- beginning of main
+04-27 18:53:46.923 12544 12544 I com.friends: Late-enabling -Xcheck:jni
+04-27 18:53:46.936 12544 12544 I com.friends: Unquickening 12 vdex files!
+04-27 18:53:46.938 12544 12544 W com.friends: Unexpected CPU variant for X86 using defaults: x86
+--------- beginning of system
+04-27 18:53:46.979 12544 12544 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[com.friends]: x86, null instrumentation[com.friends.test]: null, null
+04-27 18:53:46.982 12544 12544 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 18:53:46.983 12544 12544 I chatty  : uid=10261(com.friends) identical 1 line
+04-27 18:53:46.986 12544 12544 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 18:53:47.219 12544 12544 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 18:53:47.219 12544 12544 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 18:53:47.221 12544 12544 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 18:53:47.222 12544 12544 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 18:53:47.223 12544 12544 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 18:53:47.224 12544 12544 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 18:53:47.226 12544 12544 I chatty  : uid=10261(com.friends) identical 2 lines
+04-27 18:53:47.226 12544 12544 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 18:53:47.461 12544 12544 W com.friends: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+04-27 18:53:47.462 12544 12544 W com.friends: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+04-27 18:53:47.470 12544 12544 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+04-27 18:53:47.472 12544 12544 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+04-27 18:53:47.472 12544 12544 I MonitoringInstr: newApplication called!
+04-27 18:53:47.541 12544 12544 W com.facebook.UserSettingsManager: Please set a value for AutoLogAppEventsEnabled. Set the flag to TRUE if you want to collect app install, app launch and in-app purchase events automatically. To request user consent before collecting data, set the flag value to FALSE, then change to TRUE once user consent is received. Learn more: https://developers.facebook.com/docs/app-events/getting-started-app-events-android#disable-auto-events.
+04-27 18:53:47.541 12544 12544 W com.facebook.UserSettingsManager: You haven't set a value for AdvertiserIDCollectionEnabled. Set the flag to TRUE if you want to collect Advertiser ID for better advertising and analytics results. To request user consent before collecting data, set the flag value to FALSE, then change to TRUE once user consent is received. Learn more: https://developers.facebook.com/docs/app-events/getting-started-app-events-android#disable-auto-events.
+04-27 18:53:47.604 12544 12544 I MonitoringInstr: Instrumentation started!
+04-27 18:53:47.666 12544 12544 V SoLoader: Init System Loader delegate
+04-27 18:53:48.319 12544 12544 W com.friends: Accessing hidden field Landroid/view/View;->mKeyedTags:Landroid/util/SparseArray; (greylist, reflection, allowed)
+04-27 18:53:48.319 12544 12544 W com.friends: Accessing hidden field Landroid/view/View;->mListenerInfo:Landroid/view/View$ListenerInfo; (greylist, reflection, allowed)
+04-27 18:53:48.319 12544 12544 W com.friends: Accessing hidden field Landroid/view/View$ListenerInfo;->mOnClickListener:Landroid/view/View$OnClickListener; (greylist, reflection, allowed)
+04-27 18:53:48.337 12544 12544 I flipper : flipper: FlipperClient::addPlugin Inspector
+04-27 18:53:48.341 12544 12544 I flipper : flipper: FlipperClient::addPlugin Databases
+04-27 18:53:48.342 12544 12544 I flipper : flipper: FlipperClient::addPlugin Preferences
+04-27 18:53:48.344 12544 12544 I flipper : flipper: FlipperClient::addPlugin CrashReporter
+04-27 18:53:48.349 12544 12544 I flipper : flipper: FlipperClient::addPlugin Network
+04-27 18:53:48.352 12544 12544 I MonitoringInstr: No JSBridge.
+04-27 18:53:48.438 12544 12603 W System.err: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+04-27 18:53:48.438 12544 12603 W System.err: SLF4J: Defaulting to no-operation (NOP) logger implementation
+04-27 18:53:48.438 12544 12603 W System.err: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+04-27 18:53:48.446 12544 12596 I UsageTrackerFacilitator: Usage tracking enabled
+04-27 18:53:48.457 12544 12596 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/~~VV0N_TE9trDovfYx-VZGEQ==/com.friends.test-LTOgNYd-SDBb2mhKGpTMQw==/base.apk]
+04-27 18:53:48.459 12544 12596 W com.friends: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+04-27 18:53:48.654 12544 12596 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+04-27 18:53:48.655 12544 12596 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+04-27 18:53:48.655 12544 12596 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+04-27 18:53:48.656 12544 12596 I TestRunner: run started: 1 tests
+04-27 18:53:48.657 12544 12596 I TestRunner: run finished: 0 tests, 0 failed, 0 ignored

@@ -27,9 +27,10 @@ module.exports = {
       type: 'android.apk',
       binaryPath: 'android/app/build/outputs/apk/debug/app-debug.apk',
       build:
-        'cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug',
+        'cd android && ./gradlew assembleDebug app:assembleAndroidTest -DtestBuildType=debug',
+      testBinaryPath:
+        'android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk',
       reversePorts: [8081],
-      testBinaryPath: 'custom/path/to/app-debug-androidTest.apk',
     },
     'android.release': {
       type: 'android.apk',
@@ -55,7 +56,7 @@ module.exports = {
     emulator: {
       type: 'android.emulator',
       device: {
-        avdName: 'Pixel_3a_API_30_x86',
+        avdName: 'Pixel_3a_XL_API_30',
       },
     },
   },

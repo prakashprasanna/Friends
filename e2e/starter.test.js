@@ -1,7 +1,16 @@
 describe('Example', () => {
+  const {device} = require('detox');
+
   beforeAll(async () => {
-    await device.launchApp();
+    await device.launchApp({
+      newInstance: true,
+      launchArgs: {detoxEnableSynchronization: 0},
+    });
   });
+
+  // beforeEach(async () => {
+  //   await device.reloadReactNative();
+  // });
 
   it('should press on the get started button', async () => {
     await element(by.id('get')).tap();

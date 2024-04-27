@@ -1,0 +1,796 @@
+18:48:50.368 detox[32916] [90mB[39m node_modules/.bin/detox test -c android.emu.debug --record-logs all
+  data: {
+    "id": "c29c466b-bc74-1a6e-fc98-80e94f11fc76",
+    "detoxConfig": {
+      "configurationName": "android.emu.debug",
+      "apps": {
+        "default": {
+          "type": "android.apk",
+          "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
+          "build": "cd android && ./gradlew assembleDebug app:assembleAndroidTest -DtestBuildType=debug",
+          "testBinaryPath": "android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk",
+          "reversePorts": [
+            8081
+          ]
+        }
+      },
+      "artifacts": {
+        "rootDir": "artifacts/android.emu.debug.2024-04-27 06-48-50Z",
+        "plugins": {
+          "log": {
+            "enabled": true,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "screenshot": {
+            "enabled": true,
+            "shouldTakeAutomaticSnapshots": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "video": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "instruments": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "uiHierarchy": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          }
+        }
+      },
+      "behavior": {
+        "init": {
+          "keepLockFile": false,
+          "reinstallApp": true,
+          "exposeGlobals": true
+        },
+        "cleanup": {
+          "shutdownDevice": false
+        },
+        "launchApp": "auto"
+      },
+      "cli": {
+        "recordLogs": "all",
+        "configuration": "android.emu.debug",
+        "start": true
+      },
+      "device": {
+        "type": "android.emulator",
+        "device": {
+          "avdName": "Pixel_3a_XL_API_30"
+        }
+      },
+      "logger": {
+        "level": "info",
+        "overrideConsole": true,
+        "options": {
+          "showLoggerName": true,
+          "showPid": true,
+          "showLevel": false,
+          "showMetadata": false,
+          "basepath": "/Users/prakash/friends/friends/node_modules/detox/src",
+          "prefixers": {},
+          "stringifiers": {}
+        }
+      },
+      "testRunner": {
+        "retries": 0,
+        "forwardEnv": false,
+        "detached": false,
+        "bail": false,
+        "jest": {
+          "setupTimeout": 120000,
+          "teardownTimeout": 30000,
+          "retryAfterCircusRetries": false,
+          "reportWorkerAssign": true
+        },
+        "args": {
+          "$0": "jest",
+          "_": [],
+          "config": "e2e/jest.config.js",
+          "--": []
+        }
+      },
+      "session": {
+        "autoStart": true,
+        "debugSynchronization": 10000
+      }
+    },
+    "detoxIPCServer": "primary-32916",
+    "testResults": [],
+    "testSessionIndex": 0,
+    "workersCount": 0
+  }
+18:48:50.381 detox[32916] [90mi[39m Server path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + ipc.config.id /tmp/detox.primary-32916
+18:48:50.382 detox[32916] [90mi[39m starting server on  /tmp/detox.primary-32916 
+18:48:50.383 detox[32916] [90mi[39m starting TLS server false
+18:48:50.383 detox[32916] [90mi[39m starting server as Unix || Windows Socket
+18:48:50.386 detox[32916] [90mi[39m Detox server listening on localhost:51426...
+18:48:50.393 detox[32916] [90mi[39m Serialized the session state at: /private/var/folders/zl/yhsj7tf936bgy8mwmcdcj4zh0000gn/T/c29c466b-bc74-1a6e-fc98-80e94f11fc76.detox.json
+18:48:50.395 detox[32916] [90mB[39m jest --config e2e/jest.config.js
+18:48:51.395 detox[32917] [90mi[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+18:48:51.395 detox[32917] [90mi[39m requested connection to  primary-32916 /tmp/detox.primary-32916
+18:48:51.395 detox[32917] [90mi[39m Connecting client on Unix Socket : /tmp/detox.primary-32916
+18:48:51.396 detox[32916] [90mi[39m ## socket connection to server detected ##
+18:48:51.399 detox[32917] [90mi[39m retrying reset
+18:48:51.401 detox[32917] [90mi[39m dispatching event to  primary-32916 /tmp/detox.primary-32916  :  registerContext , { id: 'secondary-32917' }
+18:48:51.403 detox[32916] [90mi[39m received event of :  registerContext { id: 'secondary-32917' }
+18:48:51.404 detox[32916] [90mi[39m dispatching event to socket  :  registerContextDone {
+  testResults: [],
+  testSessionIndex: 0,
+  unsafe_earlyTeardown: undefined
+}
+18:48:51.404 detox[32917] [90mi[39m ## received events ##
+18:48:51.405 detox[32917] [90mi[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+18:48:51.558 detox[32917] [90mB[39m e2e/starter.test.js
+18:48:51.574 detox[32917] [90mB[39m set up environment
+18:48:51.576 detox[32917] [90mi[39m dispatching event to  primary-32916 /tmp/detox.primary-32916  :  registerWorker , { workerId: 'w1' }
+18:48:51.577 detox[32916] [90mi[39m received event of :  registerWorker { workerId: 'w1' }
+18:48:51.577 detox[32916] [90mi[39m dispatching event to socket  :  registerWorkerDone { workersCount: 1 }
+18:48:51.577 detox[32916] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-32916  :   sessionStateUpdate { workersCount: 1 }
+18:48:51.577 detox[32917] [90mi[39m ## received events ##
+18:48:51.578 detox[32917] [90mi[39m detected event registerWorkerDone { workersCount: 1 }
+18:48:51.794 detox[32917] [90mi[39m ## received events ##
+18:48:51.794 detox[32917] [90mi[39m detected event sessionStateUpdate { workersCount: 1 }
+18:48:51.799 detox[32916] [90mB[39m connection :51426<->:51428
+18:48:51.800 detox[32917] [90mi[39m opened web socket to: ws://localhost:51426
+18:48:51.803 detox[32917] [90mi[39m send message
+  data: {"type":"login","params":{"sessionId":"d55377c6-c7ff-027e-9ef5-44616cdd8932","role":"tester"},"messageId":0}
+18:48:51.804 detox[32916] [90mi[39m get
+  data: {"type":"login","params":{"sessionId":"d55377c6-c7ff-027e-9ef5-44616cdd8932","role":"tester"},"messageId":0}
+18:48:51.804 detox[32916] [90mi[39m created session d55377c6-c7ff-027e-9ef5-44616cdd8932
+18:48:51.805 detox[32916] [90mi[39m send
+  data: {
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": false
+    },
+    "messageId": 0
+  }
+18:48:51.805 detox[32916] [90mi[39m tester joined session d55377c6-c7ff-027e-9ef5-44616cdd8932
+18:48:51.806 detox[32917] [90mi[39m get message
+  data: {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+   
+18:48:51.880 detox[32916] [90mi[39m received event of :  allocateDevice {
+  deviceConfig: {
+    type: 'android.emulator',
+    device: { avdName: 'Pixel_3a_XL_API_30' }
+  }
+}
+18:48:51.880 detox[32917] [90mi[39m dispatching event to  primary-32916 /tmp/detox.primary-32916  :  allocateDevice , {
+  deviceConfig: {
+    type: 'android.emulator',
+    device: { avdName: 'Pixel_3a_XL_API_30' }
+  }
+}
+18:48:51.916 detox[32916] [90mB[39m init
+  args: ()
+18:48:51.921 detox[32916] [90mE[39m init
+18:48:51.921 detox[32916] [90mB[39m allocate
+  data: {
+    "type": "android.emulator",
+    "device": {
+      "avdName": "Pixel_3a_XL_API_30"
+    }
+  }
+18:48:51.922 detox[32916] [90mi[39m "/Users/prakash/Library/Android/sdk/emulator/emulator" -list-avds --verbose
+18:48:51.977 detox[32916] [90mi[39m INFO    | Storing crashdata in: /tmp/android-prakash/emu-crash-35.1.4.db, detection is enabled for process: 32934
+Pixel_3a_XL_API_30
+Pixel_XL_API_30
+
+18:48:51.977 detox[32916] [90mi[39m "/Users/prakash/Library/Android/sdk/emulator/emulator" -version 
+18:48:52.166 detox[32916] [90mi[39m INFO    | Storing crashdata in: /tmp/android-prakash/emu-crash-35.1.4.db, detection is enabled for process: 32937
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+Android emulator version 35.1.4.0 (build_id 11672324) (CL:N/A)
+Copyright (C) 2006-2024 The Android Open Source Project and many others.
+This program is a derivative of the QEMU CPU emulator (www.qemu.org).
+
+  This software is licensed under the terms of the GNU General Public
+  License version 2, as published by the Free Software Foundation, and
+  may be copied, distributed, and modified under those terms.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+
+18:48:52.166 detox[32916] [90mi[39m Detected emulator binary version { major: 35, minor: 1, patch: 4, toString: [Function: toString] }
+18:48:52.167 detox[32916] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb"  devices
+18:48:52.177 detox[32916] [90mi[39m List of devices attached
+emulator-5554	device
+
+
+18:48:52.178 detox[32916] [90mi[39m port: 5554, host: localhost
+18:48:52.187 detox[32916] [90mi[39m Found a matching & free device emulator-5554
+18:48:52.188 detox[32916] [90mi[39m settled on emulator-5554 (Pixel_3a_XL_API_30)
+  data: {
+    "id": "emulator-5554",
+    "adbName": "emulator-5554",
+    "name": "emulator-5554 (Pixel_3a_XL_API_30)"
+  }
+18:48:52.188 detox[32916] [90mE[39m allocate
+18:48:52.188 detox[32916] [90mB[39m post-allocate: emulator-5554
+  data: {
+    "id": "emulator-5554",
+    "adbName": "emulator-5554",
+    "name": "emulator-5554 (Pixel_3a_XL_API_30)"
+  }
+18:48:52.189 detox[32916] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "getprop dev.bootcomplete"
+18:48:52.209 detox[32916] [90mi[39m 1
+
+18:48:52.210 detox[32916] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "getprop ro.build.version.sdk"
+18:48:52.240 detox[32916] [90mi[39m 30
+
+18:48:52.241 detox[32916] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "settings put global animator_duration_scale 0"
+18:48:52.272 detox[32916] [90mi[39m 
+18:48:52.272 detox[32916] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "settings put global window_animation_scale 0"
+18:48:52.303 detox[32916] [90mi[39m 
+18:48:52.304 detox[32916] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "settings put global transition_animation_scale 0"
+18:48:52.349 detox[32916] [90mi[39m 
+18:48:52.349 detox[32916] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "dumpsys power | grep \"^[ ]*m[UW].*=\""
+18:48:52.454 detox[32916] [90mi[39m   mWakefulness=Awake
+  mWakefulnessChanging=false
+  mWakeLockSummary=0x1
+  mUserActivitySummary=0x1
+  mWakeUpWhenPluggedOrUnpluggedConfig=false
+  mWakeUpWhenPluggedOrUnpluggedInTheaterModeConfig=false
+  mUserActivityTimeoutOverrideFromWindowManager=-1
+  mUserInactiveOverrideFromWindowManager=false
+  mUserId=0
+
+18:48:52.454 detox[32916] [90mE[39m post-allocate: emulator-5554
+18:48:52.455 detox[32916] [90mi[39m dispatching event to socket  :  allocateDeviceDone {
+  deviceCookie: {
+    id: 'emulator-5554',
+    adbName: 'emulator-5554',
+    name: 'emulator-5554 (Pixel_3a_XL_API_30)'
+  }
+}
+18:48:52.455 detox[32917] [90mi[39m ## received events ##
+18:48:52.455 detox[32917] [90mi[39m detected event allocateDeviceDone {
+  deviceCookie: {
+    id: 'emulator-5554',
+    adbName: 'emulator-5554',
+    name: 'emulator-5554 (Pixel_3a_XL_API_30)'
+  }
+}
+18:48:52.497 detox[32917] [90mB[39m onBootDevice
+  args: ({"deviceId":"emulator-5554"})
+18:48:52.498 detox[32917] [90mE[39m onBootDevice
+18:48:52.498 detox[32917] [90mB[39m installUtilBinaries
+  args: ()
+18:48:52.498 detox[32917] [90mE[39m installUtilBinaries
+18:48:52.499 detox[32917] [90mB[39m selectApp
+  args: ("default")
+18:48:52.502 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/build-tools/34.0.0/aapt" dump badging "/Users/prakash/friends/friends/android/app/build/outputs/apk/debug/app-debug.apk"
+18:48:52.643 detox[32917] [90mi[39m package: name='com.friends' versionCode='1' versionName='1.0' platformBuildVersionName='14' platformBuildVersionCode='34' compileSdkVersion='34' compileSdkVersionCodename='14'
+sdkVersion:'21'
+targetSdkVersion:'34'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+uses-permission: name='android.permission.SYSTEM_ALERT_WINDOW'
+uses-permission: name='com.friends.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+uses-permission: name='com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE'
+application-label:'friends'
+application-label-af:'friends'
+application-label-am:'friends'
+application-label-ar:'friends'
+application-label-as:'friends'
+application-label-az:'friends'
+application-label-be:'friends'
+application-label-bg:'friends'
+application-label-bn:'friends'
+application-label-bs:'friends'
+application-label-ca:'friends'
+application-label-cs:'friends'
+application-label-da:'friends'
+application-label-de:'friends'
+application-label-el:'friends'
+application-label-en-AU:'friends'
+application-label-en-CA:'friends'
+application-label-en-GB:'friends'
+application-label-en-IN:'friends'
+application-label-en-XC:'friends'
+application-label-es:'friends'
+application-label-es-419:'friends'
+application-label-es-ES:'friends'
+application-label-es-US:'friends'
+application-label-et:'friends'
+application-label-eu:'friends'
+application-label-fa:'friends'
+application-label-fi:'friends'
+application-label-fr:'friends'
+application-label-fr-CA:'friends'
+application-label-gl:'friends'
+application-label-gu:'friends'
+application-label-ha:'friends'
+application-label-hi:'friends'
+application-label-hr:'friends'
+application-label-hu:'friends'
+application-label-hy:'friends'
+application-label-id:'friends'
+application-label-in:'friends'
+application-label-is:'friends'
+application-label-it:'friends'
+application-label-iw:'friends'
+application-label-ja:'friends'
+application-label-jv:'friends'
+application-label-ka:'friends'
+application-label-kk:'friends'
+application-label-km:'friends'
+application-label-kn:'friends'
+application-label-ko:'friends'
+application-label-ku:'friends'
+application-label-ky:'friends'
+application-label-lo:'friends'
+application-label-lt:'friends'
+application-label-lv:'friends'
+application-label-mk:'friends'
+application-label-ml:'friends'
+application-label-mn:'friends'
+application-label-mr:'friends'
+application-label-ms:'friends'
+application-label-my:'friends'
+application-label-nb:'friends'
+application-label-ne:'friends'
+application-label-nl:'friends'
+application-label-or:'friends'
+application-label-pa:'friends'
+application-label-pl:'friends'
+application-label-ps:'friends'
+application-label-pt:'friends'
+application-label-pt-BR:'friends'
+application-label-pt-PT:'friends'
+application-label-ro:'friends'
+application-label-ru:'friends'
+application-label-si:'friends'
+application-label-sk:'friends'
+application-label-sl:'friends'
+application-label-so:'friends'
+application-label-sq:'friends'
+application-label-sr:'friends'
+application-label-sr-Latn:'friends'
+application-label-sv:'friends'
+application-label-sw:'friends'
+application-label-ta:'friends'
+application-label-te:'friends'
+application-label-tg:'friends'
+application-label-th:'friends'
+application-label-tl:'friends'
+application-label-tr:'friends'
+application-label-uk:'friends'
+application-label-ur:'friends'
+application-label-uz:'friends'
+application-label-vi:'friends'
+application-label-zh-CN:'friends'
+application-label-zh-HK:'friends'
+application-label-zh-TW:'friends'
+application-label-zu:'friends'
+application-icon-160:'res/mipmap-mdpi-v4/ic_launcher.png'
+application-icon-240:'res/mipmap-hdpi-v4/ic_launcher.png'
+application-icon-320:'res/mipmap-xhdpi-v4/ic_launcher.png'
+application-icon-480:'res/mipmap-xxhdpi-v4/ic_launcher.png'
+application-icon-640:'res/mipmap-xxxhdpi-v4/ic_launcher.png'
+application: label='friends' icon='res/mipmap-mdpi-v4/ic_launcher.png'
+application-debuggable
+launchable-activity: name='com.friends.MainActivity'  label='friends' icon=''
+feature-group: label=''
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+  uses-feature: name='android.hardware.wifi'
+  uses-implied-feature: name='android.hardware.wifi' reason='requested android.permission.ACCESS_WIFI_STATE permission'
+main
+other-activities
+other-receivers
+other-services
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-419' 'es-ES' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'ha' 'hi' 'hr' 'hu' 'hy' 'id' 'in' 'is' 'it' 'iw' 'ja' 'jv' 'ka' 'kk' 'km' 'kn' 'ko' 'ku' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'ps' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'so' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'tg' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '160' '240' '320' '480' '640'
+native-code: 'arm64-v8a' 'armeabi-v7a' 'x86' 'x86_64'
+
+18:48:52.643 detox[32917] [90mE[39m selectApp
+18:48:52.643 detox[32917] [90mB[39m uninstallApp
+  args: ()
+18:48:52.643 detox[32917] [90mB[39m onBeforeUninstallApp
+  args: ({"deviceId":"emulator-5554","bundleId":"com.friends"})
+18:48:52.644 detox[32917] [90mE[39m onBeforeUninstallApp
+18:48:52.644 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "pm list packages com.friends"
+18:48:52.677 detox[32917] [90mi[39m package:com.friends
+package:com.friends.test
+
+18:48:52.678 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 uninstall com.friends
+18:48:52.836 detox[32917] [90mi[39m Success
+
+18:48:52.836 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "pm list packages com.friends.test"
+18:48:52.899 detox[32917] [90mi[39m package:com.friends.test
+
+18:48:52.899 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 uninstall com.friends.test
+18:48:53.249 detox[32917] [90mi[39m Success
+
+18:48:53.249 detox[32917] [90mE[39m uninstallApp
+18:48:53.250 detox[32917] [90mB[39m selectApp
+  args: ("default")
+18:48:53.250 detox[32917] [90mB[39m terminateApp
+  args: ()
+18:48:53.251 detox[32917] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-5554","bundleId":"com.friends"})
+18:48:53.251 detox[32917] [90mE[39m onBeforeTerminateApp
+18:48:53.251 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "am force-stop com.friends"
+18:48:53.362 detox[32917] [90mi[39m 
+18:48:53.362 detox[32917] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-5554","bundleId":"com.friends"})
+18:48:53.362 detox[32917] [90mE[39m onTerminateApp
+18:48:53.363 detox[32917] [90mE[39m terminateApp
+18:48:53.363 detox[32917] [90mE[39m selectApp
+18:48:53.363 detox[32917] [90mB[39m installApp
+  args: ()
+18:48:53.363 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/build-tools/34.0.0/aapt" dump xmlstrings "/Users/prakash/friends/friends/android/app/build/outputs/apk/debug/app-debug.apk" AndroidManifest.xml
+18:48:53.375 detox[32917] [90mi[39m String pool of 90 unique UTF-16 non-sorted strings, 90 entries and 0 styles using 4816 bytes:
+String #0: theme
+String #1: label
+String #2: icon
+String #3: name
+String #4: permission
+String #5: protectionLevel
+String #6: debuggable
+String #7: exported
+String #8: excludeFromRecents
+String #9: authorities
+String #10: launchMode
+String #11: configChanges
+String #12: value
+String #13: scheme
+String #14: host
+String #15: minSdkVersion
+String #16: versionCode
+String #17: versionName
+String #18: windowSoftInputMode
+String #19: targetSdkVersion
+String #20: allowBackup
+String #21: supportsRtl
+String #22: extractNativeLibs
+String #23: usesCleartextTraffic
+String #24: networkSecurityConfig
+String #25: roundIcon
+String #26: compileSdkVersion
+String #27: compileSdkVersionCodename
+String #28: appComponentFactory
+String #29: 1.0
+String #30: 14
+String #31: 314242574751721
+String #32: GlideModule
+String #33: action
+String #34: activity
+String #35: android
+String #36: android.intent.action.MAIN
+String #37: android.intent.action.VIEW
+String #38: android.intent.category.BROWSABLE
+String #39: android.intent.category.DEFAULT
+String #40: android.intent.category.LAUNCHER
+String #41: android.permission.ACCESS_NETWORK_STATE
+String #42: android.permission.ACCESS_WIFI_STATE
+String #43: android.permission.INTERNET
+String #44: android.permission.SYSTEM_ALERT_WINDOW
+String #45: androidx.core.app.CoreComponentFactory
+String #46: androidx.emoji2.text.EmojiCompatInitializer
+String #47: androidx.lifecycle.ProcessLifecycleInitializer
+String #48: androidx.startup
+String #49: androidx.startup.InitializationProvider
+String #50: application
+String #51: category
+String #52: cct.com.friends
+String #53: com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
+String #54: com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+String #55: com.facebook.CustomTabActivity
+String #56: com.facebook.CustomTabMainActivity
+String #57: com.facebook.FacebookActivity
+String #58: com.facebook.internal.FacebookInitProvider
+String #59: com.facebook.react.devsupport.DevSettingsActivity
+String #60: com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+String #61: com.facebook.sdk.ApplicationId
+String #62: com.facebook.soloader.enabled
+String #63: com.friends
+String #64: com.friends.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+String #65: com.friends.FacebookInitProvider
+String #66: com.friends.MainActivity
+String #67: com.friends.MainApplication
+String #68: com.friends.androidx-startup
+String #69: com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+String #70: com.google.android.gms.auth.api.signin.RevocationBoundService
+String #71: com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+String #72: com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+String #73: com.google.android.gms.common.api.GoogleApiActivity
+String #74: com.google.android.gms.version
+String #75: data
+String #76: fbconnect
+String #77: http://schemas.android.com/apk/res/android
+String #78: intent-filter
+String #79: manifest
+String #80: meta-data
+String #81: package
+String #82: permission
+String #83: platformBuildVersionCode
+String #84: platformBuildVersionName
+String #85: provider
+String #86: receiver
+String #87: service
+String #88: uses-permission
+String #89: uses-sdk
+
+18:48:53.376 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/build-tools/34.0.0/aapt" dump xmlstrings "/Users/prakash/friends/friends/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk" AndroidManifest.xml
+18:48:53.394 detox[32917] [90mi[39m String pool of 39 unique UTF-16 non-sorted strings, 39 entries and 0 styles using 1856 bytes:
+String #0: theme
+String #1: label
+String #2: name
+String #3: debuggable
+String #4: exported
+String #5: priority
+String #6: targetPackage
+String #7: handleProfiling
+String #8: functionalTest
+String #9: minSdkVersion
+String #10: targetSdkVersion
+String #11: extractNativeLibs
+String #12: compileSdkVersion
+String #13: compileSdkVersionCodename
+String #14: 14
+String #15: Tests for com.friends
+String #16: activity
+String #17: android
+String #18: android.intent.category.LAUNCHER
+String #19: android.permission.REORDER_TASKS
+String #20: android.test.runner
+String #21: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+String #22: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+String #23: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+String #24: androidx.test.runner.AndroidJUnitRunner
+String #25: application
+String #26: category
+String #27: com.friends
+String #28: com.friends.test
+String #29: http://schemas.android.com/apk/res/android
+String #30: instrumentation
+String #31: intent-filter
+String #32: manifest
+String #33: package
+String #34: platformBuildVersionCode
+String #35: platformBuildVersionName
+String #36: uses-library
+String #37: uses-permission
+String #38: uses-sdk
+
+18:48:53.395 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "rm -fr /data/local/tmp/detox"
+18:48:53.437 detox[32917] [90mi[39m 
+18:48:53.437 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "mkdir -p /data/local/tmp/detox"
+18:48:53.471 detox[32917] [90mi[39m 
+18:48:53.472 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 push "/Users/prakash/friends/friends/android/app/build/outputs/apk/debug/app-debug.apk" "/data/local/tmp/detox/Application.apk"
+18:48:53.817 detox[32917] [90mi[39m /Users/prakash/friends/friends/android/app/build/outputs/apk/debug/app-debug.apk: 1 file pushed, 0 skipped. 180.3 MB/s (57786370 bytes in 0.306s)
+
+18:48:53.818 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "getprop ro.build.version.sdk"
+18:48:53.852 detox[32917] [90mi[39m 30
+
+18:48:53.853 detox[32917] [90mi[39m /Users/prakash/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell pm install -r -g -t /data/local/tmp/detox/Application.apk
+18:48:54.645 detox[32917] [90mi[39m Success
+
+18:48:54.648 detox[32917] [90mi[39m /Users/prakash/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell pm install -r -g -t /data/local/tmp/detox/Application.apk exited with code #0
+18:48:54.649 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 push "/Users/prakash/friends/friends/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk" "/data/local/tmp/detox/Test.apk"
+18:48:54.698 detox[32917] [90mi[39m /Users/prakash/friends/friends/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk: 1 file pushed, 0 skipped. 128.6 MB/s (2537188 bytes in 0.019s)
+
+18:48:54.699 detox[32917] [90mi[39m /Users/prakash/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell pm install -r -g -t /data/local/tmp/detox/Test.apk
+18:48:55.170 detox[32917] [90mi[39m Success
+
+18:48:55.183 detox[32917] [90mi[39m /Users/prakash/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell pm install -r -g -t /data/local/tmp/detox/Test.apk exited with code #0
+18:48:55.184 detox[32917] [90mB[39m reverseTcpPort
+  args: (8081)
+18:48:55.184 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 reverse tcp:8081 tcp:8081
+18:48:55.198 detox[32917] [90mi[39m 
+18:48:55.198 detox[32917] [90mE[39m reverseTcpPort
+18:48:55.198 detox[32917] [90mE[39m installApp
+18:48:55.198 detox[32917] [90mB[39m selectApp
+  args: ("default")
+18:48:55.199 detox[32917] [90mB[39m terminateApp
+  args: ()
+18:48:55.199 detox[32917] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-5554","bundleId":"com.friends"})
+18:48:55.199 detox[32917] [90mE[39m onBeforeTerminateApp
+18:48:55.199 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "am force-stop com.friends"
+18:48:55.263 detox[32917] [90mi[39m 
+18:48:55.263 detox[32917] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-5554","bundleId":"com.friends"})
+18:48:55.264 detox[32917] [90mE[39m onTerminateApp
+18:48:55.264 detox[32917] [90mE[39m terminateApp
+18:48:55.264 detox[32917] [90mE[39m selectApp
+18:48:55.264 detox[32917] [90mE[39m set up environment
+18:48:55.915 detox[32917] [90mi[39m starter.test.js is assigned to emulator-5554 (Pixel_3a_XL_API_30)
+18:48:55.916 detox[32917] [90mB[39m run the tests
+18:48:55.916 detox[32917] [90mB[39m onRunDescribeStart
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+18:48:55.917 detox[32917] [90mE[39m onRunDescribeStart
+18:48:55.917 detox[32917] [90mB[39m Example
+18:48:55.917 detox[32917] [90mB[39m onRunDescribeStart
+  args: ({"name":"Example"})
+18:48:55.917 detox[32917] [90mE[39m onRunDescribeStart
+18:48:55.918 detox[32917] [90mB[39m beforeAll
+18:48:55.921 detox[32917] [90mB[39m launchApp
+  args: ({"newInstance":true})
+18:48:55.922 detox[32917] [90mB[39m terminateApp
+  args: ("com.friends")
+18:48:55.922 detox[32917] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-5554","bundleId":"com.friends"})
+18:48:55.923 detox[32917] [90mE[39m onBeforeTerminateApp
+18:48:55.923 detox[32917] [90mB[39m onHookFailure
+  args: ({"error":{},"hook":"beforeAll"})
+18:48:55.923 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "am force-stop com.friends"
+18:48:55.925 detox[32917] [90mE[39m onHookFailure
+18:48:55.931 detox[32917] [90mE[39m beforeAll
+  error: ReferenceError: sleep is not defined
+      at Object.launchApp (/Users/prakash/friends/friends/e2e/starter.test.js:6:14)
+      at Generator.next (<anonymous>)
+      at asyncGeneratorStep (/Users/prakash/friends/friends/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+      at _next (/Users/prakash/friends/friends/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9)
+      at /Users/prakash/friends/friends/node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:7
+      at new Promise (<anonymous>)
+      at Object.<anonymous> (/Users/prakash/friends/friends/node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:12)
+      at Promise.then.completed (/Users/prakash/friends/friends/node_modules/jest-circus/build/utils.js:298:28)
+      at new Promise (<anonymous>)
+      at callAsyncCircusFn (/Users/prakash/friends/friends/node_modules/jest-circus/build/utils.js:231:10)
+      at _callCircusHook (/Users/prakash/friends/friends/node_modules/jest-circus/build/run.js:281:40)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at _runTestsForDescribeBlock (/Users/prakash/friends/friends/node_modules/jest-circus/build/run.js:95:7)
+      at _runTestsForDescribeBlock (/Users/prakash/friends/friends/node_modules/jest-circus/build/run.js:121:9)
+      at run (/Users/prakash/friends/friends/node_modules/jest-circus/build/run.js:71:3)
+      at runAndTransformResultsToJestFormat (/Users/prakash/friends/friends/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+      at jestAdapter (/Users/prakash/friends/friends/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+      at runTestInternal (/Users/prakash/friends/friends/node_modules/jest-runner/build/runTest.js:367:16)
+      at runTest (/Users/prakash/friends/friends/node_modules/jest-runner/build/runTest.js:444:34)
+18:48:55.932 detox[32917] [90mB[39m should press on the get started button
+18:48:55.932 detox[32917] [90mi[39m Example: should press on the get started button
+18:48:55.934 detox[32917] [90mE[39m should press on the get started button
+18:48:55.934 detox[32917] [90mi[39m Example: should press on the get started button [FAIL]
+18:48:55.935 detox[32917] [90mB[39m should type rememberprakash@gmail.com
+18:48:55.936 detox[32917] [90mi[39m Example: should type rememberprakash@gmail.com
+18:48:55.937 detox[32917] [90mE[39m should type rememberprakash@gmail.com
+18:48:55.937 detox[32917] [90mi[39m Example: should type rememberprakash@gmail.com [FAIL]
+18:48:55.938 detox[32917] [90mB[39m should type 123456
+18:48:55.938 detox[32917] [90mi[39m Example: should type 123456
+18:48:55.939 detox[32917] [90mE[39m should type 123456
+18:48:55.939 detox[32917] [90mi[39m Example: should type 123456 [FAIL]
+18:48:55.940 detox[32917] [90mB[39m should press on the sign in button
+18:48:55.940 detox[32917] [90mi[39m Example: should press on the sign in button
+18:48:55.941 detox[32917] [90mE[39m should press on the sign in button
+18:48:55.941 detox[32917] [90mi[39m Example: should press on the sign in button [FAIL]
+18:48:55.942 detox[32917] [90mB[39m onRunDescribeFinish
+  args: ({"name":"Example"})
+18:48:55.942 detox[32917] [90mE[39m onRunDescribeFinish
+18:48:55.949 detox[32917] [90mE[39m Example
+18:48:55.949 detox[32917] [90mB[39m onRunDescribeFinish
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+18:48:55.949 detox[32917] [90mE[39m onRunDescribeFinish
+18:48:55.950 detox[32917] [90mE[39m run the tests
+18:48:55.977 detox[32917] [90mB[39m tear down environment
+18:48:55.977 detox[32917] [90mB[39m onBeforeCleanup
+  args: ()
+18:48:55.981 detox[32917] [90mi[39m saving FileArtifact to: artifacts/android.emu.debug.2024-04-27 06-48-50Z/detox_pid_32917.json.log { append: true }
+18:48:55.981 detox[32917] [90mi[39m saving FileArtifact to: artifacts/android.emu.debug.2024-04-27 06-48-50Z/detox_pid_32917.log { append: true }
+18:48:55.981 detox[32917] [90mE[39m onBeforeCleanup
+18:48:55.984 detox[32916] [90mi[39m tester exited session d55377c6-c7ff-027e-9ef5-44616cdd8932
+18:48:55.984 detox[32916] [90mE[39m connection :51426<->:51428
+18:48:55.984 detox[32916] [90mi[39m received event of :  deallocateDevice {
+  deviceCookie: {
+    id: 'emulator-5554',
+    adbName: 'emulator-5554',
+    name: 'emulator-5554 (Pixel_3a_XL_API_30)'
+  }
+}
+18:48:55.984 detox[32916] [90mB[39m free: emulator-5554
+  data: {}
+18:48:55.984 detox[32917] [90mi[39m dispatching event to  primary-32916 /tmp/detox.primary-32916  :  deallocateDevice , {
+  deviceCookie: {
+    id: 'emulator-5554',
+    adbName: 'emulator-5554',
+    name: 'emulator-5554 (Pixel_3a_XL_API_30)'
+  }
+}
+18:48:55.989 detox[32916] [90mE[39m free: emulator-5554
+18:48:55.989 detox[32916] [90mi[39m dispatching event to socket  :  deallocateDeviceDone {}
+18:48:55.989 detox[32917] [90mi[39m ## received events ##
+18:48:55.990 detox[32917] [90mi[39m detected event deallocateDeviceDone {}
+18:48:55.990 detox[32917] [90mE[39m tear down environment
+18:48:55.990 detox[32917] [90mE[39m e2e/starter.test.js
+18:48:56.003 detox[32917] [90mi[39m dispatching event to  primary-32916 /tmp/detox.primary-32916  :  reportTestResults , {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/Users/prakash/friends/friends/e2e/starter.test.js',
+      testExecError: undefined,
+      isPermanentFailure: false
+    }
+  ]
+}
+18:48:56.004 detox[32916] [90mi[39m received event of :  reportTestResults {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/Users/prakash/friends/friends/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+18:48:56.004 detox[32916] [90mi[39m dispatching event to socket  :  reportTestResultsDone {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/Users/prakash/friends/friends/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+18:48:56.004 detox[32916] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-32916  :   sessionStateUpdate {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/Users/prakash/friends/friends/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+18:48:56.004 detox[32917] [90mi[39m 
+18:48:56.004 detox[32917] [90mE[39m terminateApp
+18:48:56.004 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 reverse tcp:51426 tcp:51426
+18:48:56.006 detox[32917] [90mi[39m ## received events ##
+18:48:56.006 detox[32917] [90mi[39m detected event reportTestResultsDone {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/Users/prakash/friends/friends/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+18:48:56.006 detox[32917] [90mi[39m detected event sessionStateUpdate {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/Users/prakash/friends/friends/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+18:48:56.008 detox[32917] [90mi[39m connection closed primary-32916 /tmp/detox.primary-32916 0 tries remaining of 0
+18:48:56.008 detox[32917] [90mi[39m secondary-32917 exceeded connection rety amount of  or stopRetrying flag set.
+18:48:56.009 detox[32916] [90mi[39m socket disconnected secondary-32917
+18:48:56.017 detox[32917] [90mi[39m 51426
+
+18:48:56.018 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "pm list instrumentation"
+18:48:56.054 detox[32917] [90mi[39m instrumentation:com.friends.test/androidx.test.runner.AndroidJUnitRunner (target=com.friends)
+
+18:48:56.056 detox[32917] [90mi[39m /Users/prakash/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell am instrument -w -r -e detoxServer ws://localhost:51426 -e detoxSessionId d55377c6-c7ff-027e-9ef5-44616cdd8932 -e debug false com.friends.test/androidx.test.runner.AndroidJUnitRunner
+18:48:56.560 detox[32917] [90mi[39m "/Users/prakash/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "ps | grep \"com\.friends$\""
+18:48:56.611 detox[32917] [90mi[39m u0_a257       11988    295 1944552 123636 0                   0 R com.friends
+
+18:48:57.016 detox[32917] [90mi[39m Jest did not exit one second after the test run has completed.
+
+'This usually means that there are asynchronous operations that weren't stopped in your tests. Consider running Jest with `--detectOpenHandles` to troubleshoot this issue.
+18:48:58.195 detox[32917] [90mi[39m INSTRUMENTATION_RESULT: stream=
+
+Time: 0
+
+OK (0 tests)
+
+
+INSTRUMENTATION_CODE: -1
+
+18:48:58.623 detox[32917] [90mi[39m /Users/prakash/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell am instrument -w -r -e detoxServer ws://localhost:51426 -e detoxSessionId d55377c6-c7ff-027e-9ef5-44616cdd8932 -e debug false com.friends.test/androidx.test.runner.AndroidJUnitRunner exited with code #0
+18:48:58.645 detox[32916] [90mE[39m Command failed with exit code = 1:
+jest --config e2e/jest.config.js
+18:48:58.646 detox[32916] [90mB[39m cleanup
+  args: ()
+18:48:58.647 detox[32916] [90mE[39m cleanup
+18:48:58.647 detox[32916] [90mi[39m Detox server has been closed gracefully
+18:48:58.648 detox[32916] [90mE[39m node_modules/.bin/detox test -c android.emu.debug --record-logs all

@@ -1,0 +1,47 @@
+--------- beginning of main
+04-27 16:08:34.102  6799  6799 I com.friends: Late-enabling -Xcheck:jni
+04-27 16:08:34.113  6799  6799 I com.friends: Unquickening 12 vdex files!
+04-27 16:08:34.114  6799  6799 W com.friends: Unexpected CPU variant for X86 using defaults: x86
+--------- beginning of system
+04-27 16:08:34.142  6799  6799 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[com.friends]: x86, null instrumentation[com.friends.test]: null, null
+04-27 16:08:34.144  6799  6799 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 16:08:34.145  6799  6799 I chatty  : uid=10178(com.friends) identical 1 line
+04-27 16:08:34.147  6799  6799 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 16:08:34.364  6799  6799 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 16:08:34.364  6799  6799 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 16:08:34.367  6799  6799 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 16:08:34.368  6799  6799 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 16:08:34.368  6799  6799 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 16:08:34.368  6799  6799 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 16:08:34.370  6799  6799 I chatty  : uid=10178(com.friends) identical 2 lines
+04-27 16:08:34.371  6799  6799 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 16:08:34.586  6799  6799 W com.friends: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+04-27 16:08:34.586  6799  6799 W com.friends: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+04-27 16:08:34.589  6799  6799 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+04-27 16:08:34.590  6799  6799 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+04-27 16:08:34.591  6799  6799 I MonitoringInstr: newApplication called!
+04-27 16:08:34.611  6799  6799 W com.facebook.UserSettingsManager: Please set a value for AutoLogAppEventsEnabled. Set the flag to TRUE if you want to collect app install, app launch and in-app purchase events automatically. To request user consent before collecting data, set the flag value to FALSE, then change to TRUE once user consent is received. Learn more: https://developers.facebook.com/docs/app-events/getting-started-app-events-android#disable-auto-events.
+04-27 16:08:34.611  6799  6799 W com.facebook.UserSettingsManager: You haven't set a value for AdvertiserIDCollectionEnabled. Set the flag to TRUE if you want to collect Advertiser ID for better advertising and analytics results. To request user consent before collecting data, set the flag value to FALSE, then change to TRUE once user consent is received. Learn more: https://developers.facebook.com/docs/app-events/getting-started-app-events-android#disable-auto-events.
+04-27 16:08:34.644  6799  6799 I MonitoringInstr: Instrumentation started!
+04-27 16:08:34.667  6799  6799 V SoLoader: Init System Loader delegate
+04-27 16:08:34.897  6799  6799 W com.friends: Accessing hidden field Landroid/view/View;->mKeyedTags:Landroid/util/SparseArray; (greylist, reflection, allowed)
+04-27 16:08:34.897  6799  6799 W com.friends: Accessing hidden field Landroid/view/View;->mListenerInfo:Landroid/view/View$ListenerInfo; (greylist, reflection, allowed)
+04-27 16:08:34.897  6799  6799 W com.friends: Accessing hidden field Landroid/view/View$ListenerInfo;->mOnClickListener:Landroid/view/View$OnClickListener; (greylist, reflection, allowed)
+04-27 16:08:34.901  6799  6799 I flipper : flipper: FlipperClient::addPlugin Inspector
+04-27 16:08:34.902  6799  6799 I flipper : flipper: FlipperClient::addPlugin Databases
+04-27 16:08:34.903  6799  6799 I flipper : flipper: FlipperClient::addPlugin Preferences
+04-27 16:08:34.903  6799  6799 I flipper : flipper: FlipperClient::addPlugin CrashReporter
+04-27 16:08:34.905  6799  6799 I flipper : flipper: FlipperClient::addPlugin Network
+04-27 16:08:34.907  6799  6799 I MonitoringInstr: No JSBridge.
+04-27 16:08:34.913  6799  6852 W System.err: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+04-27 16:08:34.913  6799  6852 W System.err: SLF4J: Defaulting to no-operation (NOP) logger implementation
+04-27 16:08:34.913  6799  6852 W System.err: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+04-27 16:08:34.934  6799  6847 I UsageTrackerFacilitator: Usage tracking enabled
+04-27 16:08:34.935  6799  6847 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/~~YixMoGHvhC86-aRuUcBQjQ==/com.friends.test-92F5Up2E1k5r-MVgw9Y7Bg==/base.apk]
+04-27 16:08:34.936  6799  6847 W com.friends: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+04-27 16:08:35.124  6799  6847 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+04-27 16:08:35.124  6799  6847 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+04-27 16:08:35.124  6799  6847 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+04-27 16:08:35.124  6799  6847 I TestRunner: run started: 1 tests
+04-27 16:08:35.124  6799  6847 I TestRunner: run finished: 0 tests, 0 failed, 0 ignored
+04-27 16:08:35.174  6799  6837 W AnalyticsUserIDStore: initStore should have been called before calling setUserID

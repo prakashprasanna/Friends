@@ -1,0 +1,47 @@
+--------- beginning of main
+04-27 18:50:42.530 12220 12220 I com.friends: Late-enabling -Xcheck:jni
+04-27 18:50:42.543 12220 12220 I com.friends: Unquickening 12 vdex files!
+04-27 18:50:42.544 12220 12220 W com.friends: Unexpected CPU variant for X86 using defaults: x86
+--------- beginning of system
+04-27 18:50:42.587 12220 12220 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[com.friends]: x86, null instrumentation[com.friends.test]: null, null
+04-27 18:50:42.591 12220 12220 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 18:50:42.592 12220 12220 I chatty  : uid=10259(com.friends) identical 1 line
+04-27 18:50:42.595 12220 12220 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 18:50:42.838 12220 12220 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 18:50:42.838 12220 12220 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 18:50:42.843 12220 12220 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 18:50:42.845 12220 12220 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 18:50:42.845 12220 12220 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-27 18:50:42.846 12220 12220 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 18:50:42.848 12220 12220 I chatty  : uid=10259(com.friends) identical 2 lines
+04-27 18:50:42.849 12220 12220 I com.friends: The ClassLoaderContext is a special shared library.
+04-27 18:50:43.089 12220 12220 W com.friends: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+04-27 18:50:43.090 12220 12220 W com.friends: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+04-27 18:50:43.099 12220 12220 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+04-27 18:50:43.100 12220 12220 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+04-27 18:50:43.100 12220 12220 I MonitoringInstr: newApplication called!
+04-27 18:50:43.155 12220 12220 W com.facebook.UserSettingsManager: Please set a value for AutoLogAppEventsEnabled. Set the flag to TRUE if you want to collect app install, app launch and in-app purchase events automatically. To request user consent before collecting data, set the flag value to FALSE, then change to TRUE once user consent is received. Learn more: https://developers.facebook.com/docs/app-events/getting-started-app-events-android#disable-auto-events.
+04-27 18:50:43.155 12220 12220 W com.facebook.UserSettingsManager: You haven't set a value for AdvertiserIDCollectionEnabled. Set the flag to TRUE if you want to collect Advertiser ID for better advertising and analytics results. To request user consent before collecting data, set the flag value to FALSE, then change to TRUE once user consent is received. Learn more: https://developers.facebook.com/docs/app-events/getting-started-app-events-android#disable-auto-events.
+04-27 18:50:43.218 12220 12220 I MonitoringInstr: Instrumentation started!
+04-27 18:50:43.248 12220 12220 V SoLoader: Init System Loader delegate
+04-27 18:50:43.682 12220 12220 W com.friends: Accessing hidden field Landroid/view/View;->mKeyedTags:Landroid/util/SparseArray; (greylist, reflection, allowed)
+04-27 18:50:43.683 12220 12220 W com.friends: Accessing hidden field Landroid/view/View;->mListenerInfo:Landroid/view/View$ListenerInfo; (greylist, reflection, allowed)
+04-27 18:50:43.683 12220 12220 W com.friends: Accessing hidden field Landroid/view/View$ListenerInfo;->mOnClickListener:Landroid/view/View$OnClickListener; (greylist, reflection, allowed)
+04-27 18:50:43.705 12220 12220 I flipper : flipper: FlipperClient::addPlugin Inspector
+04-27 18:50:43.710 12220 12220 I flipper : flipper: FlipperClient::addPlugin Databases
+04-27 18:50:43.712 12220 12220 I flipper : flipper: FlipperClient::addPlugin Preferences
+04-27 18:50:43.713 12220 12220 I flipper : flipper: FlipperClient::addPlugin CrashReporter
+04-27 18:50:43.718 12220 12220 I flipper : flipper: FlipperClient::addPlugin Network
+04-27 18:50:43.721 12220 12220 I MonitoringInstr: No JSBridge.
+04-27 18:50:43.741 12220 12258 W AnalyticsUserIDStore: initStore should have been called before calling setUserID
+04-27 18:50:43.760 12220 12275 W System.err: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+04-27 18:50:43.760 12220 12275 W System.err: SLF4J: Defaulting to no-operation (NOP) logger implementation
+04-27 18:50:43.760 12220 12275 W System.err: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+04-27 18:50:43.781 12220 12269 I UsageTrackerFacilitator: Usage tracking enabled
+04-27 18:50:43.788 12220 12269 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/~~8ArGU2KoXB2kMCH0yWwI4A==/com.friends.test-3zZdw0YiugHknkLC2fCmCQ==/base.apk]
+04-27 18:50:43.789 12220 12269 W com.friends: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+04-27 18:50:43.993 12220 12269 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+04-27 18:50:43.994 12220 12269 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+04-27 18:50:43.994 12220 12269 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+04-27 18:50:43.995 12220 12269 I TestRunner: run started: 1 tests
+04-27 18:50:43.996 12220 12269 I TestRunner: run finished: 0 tests, 0 failed, 0 ignored
